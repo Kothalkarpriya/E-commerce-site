@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
 :root{
-    --background-color: #F8F9FA !important;
-    --text-color:#212529 !important;
+    --back-color: #F8F9FA;
+    --text-col:#212529 ;
     --light-grey:#ADB5BD;
     --little-dark-grey: #6C757D;
     --little-light-grey: #CED4DA;
@@ -14,8 +14,8 @@
 }
 body{
     font-family: var(--detail-font);
-    background-color: var(--background-color);
-    color:var(--text-color) ;
+    background-color: var(--back-color);
+    color:var(--text-col) ;
 }
 /* --navigation-- */
 .navbar{
@@ -37,18 +37,18 @@ body{
 .nav-list-group{
     list-style: none;
 }
-.list-ele{
+.nav-list-group .list-ele{
     color:var(--little-dark-grey);
     display:inline;
     font-size: large;
-    padding-inline-start: 1rem !important;
+    padding-inline-start: 1rem;
 }
-.list-ele a.nav-link{
+.nav-list-group .list-ele a.nav-link{
     text-decoration: none;
-    color:var(--background-color);
+    color:var(--back-color);
     background-color: var(--little-dark-grey);
     padding: 0.5rem 1rem;
-    border: var(--little-dark-grey) !important;
+    border: var(--little-dark-grey);
 }
 a.nav-link:hover{
     color: var(--background-color);
@@ -58,8 +58,8 @@ a.nav-link:hover{
     font-size: 1.5rem;
     margin-right: 1rem;
 }
-.list-ele:hover, i:hover{
-    color:var(--text-color) !important;
+.nav-list-group .list-ele:hover, i:hover{
+    color:var(--text-col);
 }
 
 /* main */
@@ -84,16 +84,16 @@ a.nav-link:hover{
     flex-wrap: wrap;
     padding:1rem;
 }
-.container-horizon{
+.main-section .container-horizon{
     margin:1rem;
-    width:40% !important;
-    background-color: var(--little-light-grey) !important;
+    width:40% ;
+    background-color: var(--little-light-grey);
 }
-.text-horizon{
-    padding:1rem !important;
+.main-section .text-horizon{
+    padding:1rem;
 }
-.text-horizon h3{
-    margin-bottom:1rem !important;
+.main-section .text-horizon h3{
+    margin-bottom:1rem;
 }
 .card .text-badge{
     border:none;
@@ -126,7 +126,7 @@ a.nav-link:hover{
         width:100px;
         height: 100px;
     }
-    .card .text-horizon{
-        padding:0.5rem !important;
+    .main-section .card .text-horizon{
+        padding:0.5rem;
     }
 }
