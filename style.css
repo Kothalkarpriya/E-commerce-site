@@ -63,6 +63,9 @@ a.nav-link:hover{
 }
 
 /* main */
+.main-section{
+    margin:2rem 0;
+}
 
 .branding{
     padding:1rem;
