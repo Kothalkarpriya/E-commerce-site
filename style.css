@@ -78,6 +78,7 @@ a.nav-link:hover{
 .card{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding:1rem;
 }
 .container-horizon{
@@ -98,6 +99,22 @@ a.nav-link:hover{
 .card .img-horizon{
     width:150px ;
     height:150px;
+}
+/* product-image-card */
+.product-cards{
+    padding:1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:0.5rem;
+}
+.img-cards{
+    text-align: center;
+    background-color: var(--little-light-grey);
+    padding:1rem;
+}
+.product-cards img{
+    width:20%;
+    height: fit-content;
 }
 
 
