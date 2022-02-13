@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+:root{
+    --background-color: #F8F9FA !important;
+    --text-color:#212529 !important;
+    --light-grey:#ADB5BD;
+    --little-dark-grey: #6C757D;
+    --little-light-grey: #CED4DA;
+    --heading-font:'Noto Serif Display', serif;
+    --detail-font :'Heebo', sans-serif ;
+    --bottom-shadow: 0px 15px 10px -15px var(--light-grey);
+    --right-bottom-shadow: 15px -10px 15px -15px var(--little-dark-grey);
+}
+body{
+    font-family: var(--detail-font);
+    background-color: var(--background-color);
+    color:var(--text-color) ;
+}
+/* --navigation-- */
+.navbar{
+    padding:1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--bottom-shadow);
+}
+
+.nav-brand{
+    font-size:xx-large;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+.nav-collapse{
+    padding:0 1rem;
+}
+.nav-list-group{
+    list-style: none;
+}
+.list-ele{
+    color:var(--little-dark-grey);
+    display:inline;
+    font-size: large;
+    padding-inline-start: 1rem !important;
+}
+.list-ele a.nav-link{
+    text-decoration: none;
+    color:var(--background-color);
+    background-color: var(--little-dark-grey);
+    padding: 0.5rem 1rem;
+    border: var(--little-dark-grey) !important;
+}
+a.nav-link:hover{
+    color: var(--background-color);
+    background-color: var(--light-grey);
+}
+.list-ele i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.list-ele:hover, i:hover{
+    color:var(--text-color) !important;
+}
+
+/* main */
+
+.branding{
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+}
+.img-ad{
+    width:90%;
+    text-align: center;
+}
+
+/* card */
+.card{
+    display:flex;
+    justify-content: center;
+    padding:1rem;
+}
+.container-horizon{
+    margin:1rem;
+    width:40% !important;
+    background-color: var(--little-light-grey) !important;
+}
+.text-horizon{
+    padding:1rem !important;
+}
+.text-horizon h3{
+    margin-bottom:1rem !important;
+}
+.card .text-badge{
+    border:none;
+    padding:0.2rem;
+}
+.card .img-horizon{
+    width:150px ;
+    height:150px;
+}
+
+
+@media only screen and (max-width: 800px){
+    .card .img-horizon{
+        width:100px;
+        height: 100px;
+    }
+    .card .text-horizon{
+        padding:0.5rem !important;
+    }
+}
