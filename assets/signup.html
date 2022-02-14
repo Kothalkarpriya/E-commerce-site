@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Login</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://component-library-priya.netlify.app/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand upper-text"> <a href="/home.html" class="nav-brand-link"> Shoppers Stop </a></div>
+        <div class="nav-collapse">
+            <ul class="nav-list-group">
+                <li class="list-ele">
+                    <a href="./signup.html" class="nav-link">Login</a>
+                </li>
+                <li class="list-ele">
+                    <i class="fa fa-heart-o"></i>
+                </li>
+                <li class="list-ele">
+                    <i class="fa fa-shopping-cart"></i>Cart
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="main-section">
+            <div class="signup">
+                <h2 class="heading">Signup</h2>
+                <form action="" class="signup-form" id="signup">
+                    <div class="input-block-name">
+                        <div class="input-block">
+                            <label for="#input-name">First Name</label>
+                            <input type="text" id="input-name" placeholder="First Name" required />
+                        </div>
+                        <div class="input-block">
+                            <label for="#input-lastname">Last Name</label>
+                            <input type="text" id="input-lastname" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    <div class="input-block">
+                        <label for="#input-email">Email Address</label>
+                        <input type="email" id="input-email" placeholder="username@email.com" required />
+                    </div>
+                    <div class="input-block">
+                        <label for="input-pass">Password</label>
+                        <input type="password" id="input-pass" class="input-password" placeholder="*************"
+                            required />
+                    </div>
+                    <div class="input-block">
+                        <label for="input-pass-again">Confirm Password</label>
+                        <input type="password" id="input-pass-again" class="confirm-password"
+                            placeholder="*************" required />
+                        <div class="input-block-check">
+                            <input type="checkbox" name="checkPass" id="check-box" />Show Password
+                        </div>
+                    </div>
+
+                    <div class="input-block-check">
+                        <input type="checkbox" class="accept-ele" required />I accept all Terms & condition
+                    </div>
+                    <div class="input-block">
+                        <button class="signup-btn">Create New Account</button>
+                    </div>
+                </form>
+
+                <div class="input-block">
+                    <a href="/assets/login.html" class="signup-to-login">Already have an account
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="/script.js" type="text/javascript"></script>
+</body>
+
+</html>
