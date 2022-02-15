@@ -210,6 +210,44 @@ i:hover {
     padding-left: 0.2rem;
 }
 
+/* product-page */
+.product-container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap:1rem;
+}
+.filter-aside{
+    display: flex;
+    flex-direction: column;
+}
+.prod-head{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+}
+.prod-head .prod-brand{
+    font-size: x-large;
+    font-weight: bold;
+}
+.prod-price ,.prod-category, .prod-rating{
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+}
+.prod-price input[type="range" i],.prod-category input, .prod-rating input ,.prod-rating .fa{
+    accent-color: var(--text-col);
+}
+.filter-heading{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.filter-list{
+    list-style:none;
+    padding-left:1rem;
+}
+
+
 @media only screen and (max-width: 800px) {
     .card .img-horizon {
         width: 100px;

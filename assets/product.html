@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppers Stop|Products</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://component-library-priya.netlify.app/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand upper-text">
+            <a href="/home.html" class="nav-brand-link"></a>Shoppers Stop</div>
+        <div class="nav-collapse">
+            <ul class="nav-list-group">
+                <li class="list-ele">
+                    <a href="/assets/signup.html" class="nav-link">Login</a>
+                </li>
+                <li class="list-ele">
+                    <i class="fa fa-heart-o"></i>
+                </li>
+                <li class="list-ele">
+                    <i class="fa fa-shopping-cart"></i>Cart
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="main-section">
+            <div class="product-container">
+                <aside class="filter-aside">
+                    <div class="prod-head">
+                        <div class="prod-brand">Filter</div>
+                        <div class="prod-clear">Clear</div>
+                    </div>
+                    <div class="prod-price">
+                        <div class="filter-heading">Price</div>
+                        <input type="range" value="35" name="range-input" min="500" max="2000"
+                            oninput="this.nextElementSibling.value = this.value" />
+                        <output>500</output>
+                    </div>
+                    <div class="prod-category">
+                        <div class="filter-heading">Category</div>
+                        <ul class="filter-list">
+                            <li class="filter-list-item">
+                                <label>
+                                    <input type="radio" name="men-cloth">Men
+                                </label>
+                            </li>
+                            <li class="filter-list-item">
+                                <label for="">
+                                    <input type="radio" name="women-cloth">Women
+                                </label>
+                            </li>
+                            <li class="filter-list-item">
+                                <label for="">
+                                    <input type="radio" name="kid-cloth">Kid
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prod-rating">
+                        <div class="filter-heading">Rating</div>
+                        <ul class="filter-list">
+                            <li class="filter-list-item">
+                                <label>
+                                    <input type="checkbox" name="men-cloth">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </label>
+                            </li>
+                            <li class="filter-list-item">
+                                <label>
+                                    <input type="checkbox" name="men-cloth">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </label>
+                            </li>
+                            <li class="filter-list-item">
+                                <label>
+                                    <input type="checkbox" name="men-cloth">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </label>
+                            </li>
+                            <li class="filter-list-item">
+                                <label>
+                                    <input type="checkbox" name="men-cloth">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </label>
+                            </li>
+                            <li class="filter-list-item">
+                                <label>
+                                    <input type="checkbox" name="men-cloth">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <article class="products">
+                    Products Heere
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
