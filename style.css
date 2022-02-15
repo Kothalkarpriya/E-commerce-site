@@ -119,6 +119,9 @@ i:hover {
     background-color: var(--little-light-grey);
 }
 
+.main-section .container-horizon a{
+    text-decoration: none;
+}
 .main-section .text-horizon {
     padding: 1rem;
 }
