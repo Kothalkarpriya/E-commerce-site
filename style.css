@@ -322,68 +322,82 @@ i:hover {
     flex-wrap: wrap;
 }
 
-.prod-in-cart{
-    display:flex;
-    margin:1rem;
+.prod-in-cart {
+    display: flex;
+    margin: 1rem;
     background-color: var(--white-color);
     box-shadow: 2px 2px 5px 5px var(--light-grey);
     height: max-content;
 }
-.prod-detail{
-    margin:0 1rem 0.2rem 1rem;
+
+.prod-detail {
+    margin: 0 1rem 0.2rem 1rem;
 }
-.prod-in-cart .text-lin-through{
+
+.prod-in-cart .text-lin-through {
     text-decoration: line-through;
 }
-.prod-in-cart .grey-text{
-    color:var(--little-dark-grey);
+
+.prod-in-cart .grey-text {
+    color: var(--little-dark-grey);
 }
+
 .prod-in-cart img {
     width: 180px;
-    height:max-content;
+    height: max-content;
 }
-.quant{
-    display:flex;
+
+.quant {
+    display: flex;
     align-items: center;
 }
-.quant i{
-    border:1px solid var(--little-light-grey);
+
+.quant i {
+    border: 1px solid var(--little-light-grey);
     border-radius: 50%;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
-.quant input{
-    width:10%;
-    margin:0.5rem;
+
+.quant input {
+    width: 10%;
+    margin: 0.5rem;
 }
-.prod-in-cart .button{
+
+.prod-in-cart .button {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-.prod-in-cart .button .btns, .table button{
+
+.prod-in-cart .button .btns,
+.table button {
     width: 80%;
     margin-top: 0.3rem;
-    padding:0.5rem;
+    padding: 0.5rem;
     background-color: var(--text-col);
-    color:var(--white-color);
+    color: var(--white-color);
 }
-.prod-price-detail{
-    margin:1rem;
-    display:flex;
+
+.prod-price-detail {
+    margin: 1rem;
+    display: flex;
     flex-direction: column;
-    padding:1rem;
+    padding: 1rem;
     background-color: var(--white-color);
     box-shadow: 2px 2px 5px 5px var(--light-grey);
 }
-.price-heading{
-    border-bottom:1px solid var(--text-col);
-    padding:0.5rem;
+
+.price-heading {
+    border-bottom: 1px solid var(--text-col);
+    padding: 0.5rem;
     font-weight: bold;
 }
-table{
-    padding:0.5rem;
-    width:100%;
+
+table {
+    padding: 0.5rem;
+    width: 100%;
 }
-.table-2{
+
+.table-2 {
     font-weight: bold;
     margin: 1rem 0;
     border-top: 1px solid var(--text-col);
