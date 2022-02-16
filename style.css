@@ -5,7 +5,9 @@
     --back-color: #F8F9FA;
     --text-col: #212529;
     --light-grey: #ADB5BD;
+    --white-color: #fff;
     --little-dark-grey: #6C757D;
+    --red-color: #EF233C;
     --little-light-grey: #CED4DA;
     --heading-font: 'Noto Serif Display', serif;
     --detail-font: 'Heebo', sans-serif;
@@ -35,10 +37,12 @@ body {
     font-weight: bold;
     font-family: var(--heading-font);
 }
-.nav-brand-link{
+
+.nav-brand-link {
     text-decoration: none;
-    color:var(--text-col);
+    color: var(--text-col);
 }
+
 .nav-collapse {
     padding: 0 1rem;
 }
@@ -115,6 +119,9 @@ i:hover {
     background-color: var(--little-light-grey);
 }
 
+.main-section .container-horizon a{
+    text-decoration: none;
+}
 .main-section .text-horizon {
     padding: 1rem;
 }
@@ -153,61 +160,156 @@ i:hover {
 }
 
 /* Authentication -pages */
-.signup-form, .login-form{
-    padding:1rem;
+.signup-form,
+.login-form {
+    padding: 1rem;
 }
-.signup,.login {
+
+.signup,
+.login {
     margin: auto;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #fff;
     box-shadow: var(--all-side-shadow);
 }
-.signup:hover ,.login:hover{
+
+.signup:hover,
+.login:hover {
     box-shadow: var(--all-side-bold-shadow);
 }
 
-.signup .heading, .login .heading {
+.signup .heading,
+.login .heading {
     text-align: center;
     font-family: var(--heading-font);
 }
-#signup .input-block-name{
-    display:flex;
+
+#signup .input-block-name {
+    display: flex;
 }
-#signup .input-block , #login .input-block{
+
+#signup .input-block,
+#login .input-block {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
-.input-block-check{
+
+.input-block-check {
     padding: 1rem;
 }
-.input-block-check .btn-link{
+
+.input-block-check .btn-link {
     text-decoration: none;
     font-size: smaller;
 }
+
 .input-block input {
     border-radius: 0.2rem;
     border: 1px solid var(--light-grey);
     padding: 0.5rem;
 }
-.input-block label{
+
+.input-block label {
     margin-bottom: 0.5rem;
 }
-.signup-btn , .login-btn{
+
+.signup-btn,
+.login-btn {
     background-color: var(--text-col);
     color: var(--back-color);
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
-.signup-to-login,.login-to-signup {
+.signup-to-login,
+.login-to-signup {
     text-decoration: none;
     color: var(--text-col);
     text-align: center;
 }
 
-.signup-to-login .fa ,.login-to-signup .fa{
+.signup-to-login .fa,
+.login-to-signup .fa {
     padding-left: 0.2rem;
+}
+
+/* product-page */
+.product-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+}
+
+.filter-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.prod-head .prod-brand,
+.prod-heading {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prod-price,
+.prod-category,
+.prod-rating {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-price input[type="range"i],
+.prod-category input,
+.prod-rating input,
+.prod-rating .fa {
+    accent-color: var(--text-col);
+}
+
+.filter-heading {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.filter-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.product-container .container {
+    margin: 0.5rem;
+    background-color: var(--white-color);
+}
+
+.product-container .img-badge {
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--text-col);
+}
+
+.product-container .fa-heart:hover {
+    color: var(--red-color);
+}
+
+.product-container .card-btn-items {
+    border-radius: 0;
+    background-color: var(--text-col);
+    width: 100%;
+    color: var(--back-color);
+}
+
+.product-container .card-btn-items:hover {
+    background-color: var(--little-light-grey);
+    color: var(--text-col);
 }
 
 @media only screen and (max-width: 800px) {
@@ -218,5 +320,47 @@ i:hover {
 
     .main-section .card .text-horizon {
         padding: 0.5rem;
+    }
+    .navbar{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:0.5rem;
+        width: 100%;
+    }
+    .nav-brand{
+        font-size: larger;
+    }
+    .nav-list-group{
+        padding:0.2rem;
+    }
+    .nav-collapse{
+        padding:0.2rem;
+    }
+    .navbar .list-ele{
+        font-size: large;
+        padding:0;
+    }
+}
+@media only screen and (max-width:500px){
+    .navbar{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:0.5rem;
+        width: 100%;
+    }
+    .nav-brand{
+        font-size: larger;
+    }
+    .nav-list-group{
+        padding:0.2rem;
+    }
+    .nav-collapse{
+        padding:0.2rem;
+    }
+    .navbar .list-ele{
+        font-size: small;
+        padding:0;
     }
 }
