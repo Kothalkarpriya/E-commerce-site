@@ -111,6 +111,7 @@ i:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
+    gap:1rem;
 }
 
 .main-section .container-horizon {
@@ -314,7 +315,7 @@ i:hover {
 }
 
 /* --cart-page--- */
-.cart-container {
+.cart-container, .wishlist-container {
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -343,7 +344,7 @@ i:hover {
 }
 
 .prod-in-cart img {
-    width: 180px;
+    width: 18rem;
     height: max-content;
 }
 
@@ -402,6 +403,28 @@ table {
     margin: 1rem 0;
     border-top: 1px solid var(--text-col);
     border-bottom: 1px solid var(--text-col);
+}
+/* wishlist page */
+.wishlist-container .container{
+    background-color: var(--white-color);
+}
+.wishlist-container .card-buttons .btn{
+    width:100%;
+    border-radius:0.1rem;
+    background-color: var(--little-dark-grey);
+    color:var(--back-color);
+}
+.wishlist-container .card-buttons .btn:hover{
+    background-color: var(--text-col);
+    color: var(--white-color);
+}
+.wishlist-container .image .img-badge{
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color:var(--red-color);
+}
+.wishlist-container .image .img-badge i:hover{
+    color:var(--red-color);
 }
 
 @media only screen and (max-width: 800px) {
