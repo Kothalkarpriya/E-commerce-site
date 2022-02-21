@@ -429,6 +429,11 @@ table {
 .wishlist-container .image .img-badge i:hover{
     color:var(--red-color);
 }
+.footer{
+    background-color: var(--light-grey);
+    color:var(--text-col);
+    box-shadow: var(--all-side-bold-shadow);
+}
 
 @media only screen and (max-width: 800px) {
     .card .img-horizon {
