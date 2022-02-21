@@ -42,7 +42,9 @@ body {
     text-decoration: none;
     color: var(--text-col);
 }
-
+.hamburger .fa{
+    display:none;
+}
 .nav-collapse {
     padding: 0 1rem;
 }
@@ -56,6 +58,7 @@ body {
     display: inline;
     font-size: large;
     padding-inline-start: 1rem;
+    margin:10px;
 }
 
 .nav-list-group .list-ele a.nav-link {
@@ -66,12 +69,12 @@ body {
     border: var(--little-dark-grey);
 }
 
-.nav-list-group .list-ele a.nav-link:hover {
+.nav-list-group .list-ele a.nav-link:hover, .list-ele i:hover {
     color: var(--back-color);
     background-color: var(--text-col);
 }
 
-.list-ele i {
+.list-ele i.fa-shopping-cart {
     font-size: 1.5rem;
     margin-right: 1rem;
 }
@@ -116,7 +119,7 @@ i:hover {
 
 .main-section .container-horizon {
     margin: 1rem;
-    width: 40%;
+    max-width: 35rem;
     background-color: var(--little-light-grey);
 }
 
@@ -426,11 +429,22 @@ table {
 .wishlist-container .image .img-badge i:hover{
     color:var(--red-color);
 }
+.footer{
+    background-color: var(--light-grey);
+    color:var(--text-col);
+    box-shadow: var(--all-side-bold-shadow);
+}
 
 @media only screen and (max-width: 800px) {
     .card .img-horizon {
         width: 100px;
         height: 100px;
+    }
+    .main .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-section .card .text-horizon {
@@ -446,7 +460,7 @@ table {
     }
 
     .nav-brand {
-        font-size: larger;
+        font-size: x-large;
     }
 
     .nav-list-group {
@@ -458,20 +472,18 @@ table {
     }
 
     .navbar .list-ele {
-        font-size: large;
+        font-size: medium;
         padding: 0;
     }
 }
 
 @media only screen and (max-width:500px) {
-    .navbar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0.5rem;
-        width: 100%;
+    .container-horizon{
+        width:fit-content;
     }
-
+    .img-cards{
+        width: 50%;
+    }
     .nav-brand {
         font-size: larger;
     }
@@ -487,5 +499,44 @@ table {
     .navbar .list-ele {
         font-size: small;
         padding: 0;
+    }
+}
+@media only screen and (max-width:600px){
+    .product-cards{
+        display: flex;
+    }
+    .img-cards{
+        width: 30%;
+    }
+    .hamburger .fa-bars{
+        display:block;
+        font-size:large;
+    }
+    .hamburger{
+        padding:1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .hamburger .fa-times{
+        display:none;
+    }
+    .nav-collapse{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-list-group{
+        display:none;
+    }
+    .navbar .vert{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.5rem;
+        width: 100%;
     }
 }
